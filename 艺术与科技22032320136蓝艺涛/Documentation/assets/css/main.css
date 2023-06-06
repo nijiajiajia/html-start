@@ -1,0 +1,507 @@
+/* Table of Contents
+----------------------------------
+
+0- Global CSS
+1- Heading CSS
+2- Menu CSS
+3- Sidebar Area CSS
+4- Home Area CSS
+5- Installation Area CSS
+6- HTML Structure Area CSS
+7- CSS Structure Area CSS
+8- JS Structure Area CSS
+9- PHP Structure Area CSS
+10- Customization Area CSS
+11- Source & Credits Area CSS
+12- Footer Area CSS
+13- Scroll-Top Area CSS
+
+*/
+
+
+
+/*--------------------- 0- Global CSS (Start) ---------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root{
+    --blue: #20A4F3;
+    --black: #121113;
+    --white: #fff;
+    --grey: #666;
+    --border-radius: 1rem;
+    --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+*::selection{
+    color: var(--black);
+    background-color: var(--blue);
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body{
+    padding-left: 30rem;
+}
+
+section{
+    padding: 2rem 5%;
+}
+
+::-webkit-scrollbar{
+    width: 0.8rem;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 1rem;
+    background-color: var(--blue);
+}
+
+::-webkit-scrollbar-track{
+    background:#222;
+}
+
+code{
+    padding: 2px 5px;
+    background-color: #f9f2f4;
+    color: red;
+    border-radius: 4px;
+    text-transform: none;
+}
+
+pre{
+    background-color: rgba(0, 0, 255, 0.05);
+    color: var(--grey);
+    margin: 2rem 0;
+    font-size: 1.6rem;
+    padding: 2rem 1rem;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    text-transform: none;
+}
+
+
+/*--------------------- 0- Global CSS (End) ---------------------*/
+
+
+
+/*--------------------- 1- Heading CSS (Start) ---------------------*/
+.heading{
+    margin: 2rem 0rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 3rem;
+}
+
+.heading h2{
+    font-family: 'Dancing Script', cursive;
+    color: var(--black);
+    font-size: 4rem;
+    position: relative;
+}
+
+.heading h2 span{
+    font-family: 'Dancing Script', cursive;
+    color: var(--blue);
+}
+
+.heading h2::before{
+    content: '';
+    position: absolute;
+    bottom: -0.5rem; left: 0;
+    background: var(--blue);
+    height: 0.2rem;
+    width: 110%;
+}
+
+/*--------------------- 1- Heading CSS (End) ---------------------*/
+
+
+
+/*--------------------- 2- Menubar CSS (Start) ---------------------*/
+#menu{
+    position: fixed;
+    z-index: 10000;
+    top: 1rem;
+    right: 1rem;
+    background-color: var(--blue);
+    color: var(--white);
+    cursor: pointer;
+    font-size: 3rem;
+    padding: 1rem 1.5rem;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    display: none;
+}
+
+/*--------------------- 2- Menubar CSS (End) ---------------------*/
+
+
+
+/*--------------------- 3- Sidebar Area CSS (Start) ---------------------*/
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 30rem;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 5rem;
+    z-index: 1000;
+    background: var(--black);
+    padding: 2rem 0;
+    text-align: center;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    overflow-y: auto;
+}
+
+.sidebar .logo h2{
+    font-family: 'Dancing Script', cursive;
+    color: var(--blue);
+    font-size: 4rem;
+    font-weight: bold;
+    padding-top: 4rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+}
+
+.sidebar .navbar a{
+    display: block;
+    font-size: 2rem;
+    color: var(--white);
+    margin: 1rem 0;
+}
+
+.sidebar .navbar a:hover,
+.sidebar .navbar a.active{
+    color: var(--blue) ;
+}
+
+/*--------------------- 3- Sidebar Area CSS (End) ---------------------*/
+
+
+
+/*--------------------- 4- Home Area CSS (Start) ---------------------*/
+.Home{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+       align-items: center;
+    min-height: 100vh;
+}
+
+.Home .content h1{
+    font-size: 7rem;
+    color: var(--black);
+}
+
+.Home .content h5{
+    font-size: 4rem;
+    font-weight: 400;
+    color: var(--blue);
+    padding: 2rem 0;
+}
+
+.Home .content p{
+    font-size: 2rem;
+    color: var(--grey);
+    line-height: 1.5;
+}
+
+/*--------------------- 4- Home Area CSS (End) ---------------------*/
+
+
+
+/*--------------------- 5- Installation Area CSS (Start) ---------------------*/
+.Installation .content > p{
+    font-size: 1.7rem;
+    color: var(--grey);
+    padding: 2rem 0;
+}
+
+.Installation .content > ol{
+    margin-left: 5rem;
+}
+
+.Installation .content > ol li{
+    font-size: 1.6rem;
+    color: var(--black);
+    padding-top: 1rem;
+    
+}
+
+.Installation .content > ol li ul{
+    padding-left: 2rem;
+    padding-top: 1rem;
+}
+
+.Installation .content > ol li ul li{
+    padding-top: 1rem;
+}
+
+/*--------------------- 5- Installation Area CSS (End) ---------------------*/
+
+
+
+/*--------------------- 6- HTML Structure Area CSS (Start) ---------------------*/
+.Html_Structure .content > p{
+    font-size: 1.7rem;
+    color: var(--grey);
+    padding: 2rem 0;
+}
+
+/*--------------------- 6- HTML Structure Area CSS (End) ---------------------*/
+
+
+
+/*--------------------- 7- CSS Structure Area CSS (Start) ---------------------*/
+.CSS_Structure .content > p{
+    font-size: 1.7rem;
+    color: var(--grey);
+    padding: 2rem 0;
+}
+
+.CSS_Structure .content > ol{
+    margin-left: 5rem;
+}
+
+.CSS_Structure .content > ol li{
+    font-size: 1.6rem;
+    color: var(--black);
+    padding: 0.5rem; 
+}
+
+.CSS_Structure .content > ol li ul{
+    padding-left: 2rem;
+}
+
+.CSS_Structure .content > ol li ul li{
+    padding: 0.5rem;
+}
+
+/*--------------------- 7- CSS Structure Area CSS (End) ---------------------*/
+
+
+
+/*--------------------- 8- JS Structure Area CSS (Start) ---------------------*/
+.JS_Structure .content > p{
+    font-size: 1.7rem;
+    color: var(--grey);
+    padding: 2rem 0;
+}
+
+.JS_Structure .content > ul{
+    list-style-type: circle;
+    margin-left: 5rem;
+}
+
+.JS_Structure .content > ul li{
+    font-size: 1.6rem;
+    color: var(--black);
+    padding: 0.5rem; 
+}
+
+/*--------------------- 8- JS Structure Area CSS (End) ---------------------*/
+
+
+
+/*--------------------- 9- PHP Structure Area CSS (Start) ---------------------*/
+.PHP_Structure .content > p{
+    font-size: 1.7rem;
+    color: var(--grey);
+    padding: 2rem 0;
+}
+
+.PHP_Structure .content > ol{
+    margin-left: 5rem;
+}
+
+.PHP_Structure .content > ol li{
+    font-size: 1.6rem;
+    color: var(--black);
+    padding: 0.5rem 0;
+    
+}
+
+.PHP_Structure .content > ol li ul{
+    padding-left: 2rem;
+    padding-top: 1rem;
+}
+
+.PHP_Structure .content > ol li ul li{
+    padding-top: 1rem;
+}
+
+.PHP_Structure .content > ol li ul li h5{
+    font-size: 1.7rem;
+}
+
+.PHP_Structure .content > ol li ul li ul{
+    padding-left: 3rem;
+}
+
+.PHP_Structure .content > ol li ul li ul li{
+    font-size: 1.6rem;
+}
+
+/*--------------------- 9- PHP Structure Area CSS (End) ---------------------*/
+
+
+
+/*--------------------- 10- Customization Area CSS (Start) ---------------------*/
+.Customization .content > ol{
+    margin-left: 5rem;
+}
+
+.Customization .content > ol li{
+    font-size: 1.6rem;
+    color: var(--black);
+    padding: 0.5rem; 
+}
+
+.Customization .content > ol li ul{
+    padding-left: 2rem;
+}
+
+.Customization .content > ol li ul li{
+    padding: 0.5rem;
+}
+
+.Customization .content h4{
+    font-size: 2.5rem;
+    color: var(--black);
+    padding-bottom: 0.5rem;
+}
+
+.Customization .content > p{
+    font-size: 1.7rem;
+    color: var(--grey);
+    padding: 2rem 0;
+}
+
+/*--------------------- 10- Customization Area CSS (End) ---------------------*/
+
+
+
+/*--------------------- 11- Source & Credits Area CSS (Start) ---------------------*/
+.source_credits .content h4{
+    font-size: 2.5rem;
+    color: var(--black);
+    padding-bottom: 0.5rem;
+}
+
+.source_credits .content > ul{
+    margin-left: 5rem;
+    margin-bottom: 2rem;
+    list-style-type: circle;
+}
+
+.source_credits .content > ul li{
+    font-size: 1.6rem;
+    color: var(--black);
+    padding: 0.5rem; 
+}
+
+/*--------------------- 11- Source & Credits Area CSS (End) ---------------------*/
+
+
+
+/*--------------------- 12- Footer Area CSS (Start) ---------------------*/
+.footer{
+    text-align: center;
+    width: 100%;
+    background-color: rgba(0, 0, 255, 0.05);
+}
+
+.footer p{
+    color: var(--black);
+    font-size: 2rem;
+    line-height: 1.5;
+    padding: 3rem;
+}
+
+.footer p span{
+    color: var(--blue);
+}
+
+/*--------------------- 12- Footer Area CSS (End) ---------------------*/
+
+
+
+/*--------------------- 13- Scroll-Top (Start) ---------------------*/
+.scroll-top{
+    position: fixed;
+    bottom: 1rem;
+    right:1rem;
+    height: 5rem;
+    width: 5rem;
+    font-size: 3rem;
+    font-weight:lighter;
+    background: var(--baby-purple);
+    color: var(--blue);
+    border: 0.2rem solid var(--blue);
+    border-radius: 50%;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    z-index: 999;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .scroll-top:hover{
+    background: var(--blue);
+    color:var(--white);
+  }
+
+/*--------------------- 13- Scroll-Top (End) ---------------------*/
+
+
+
