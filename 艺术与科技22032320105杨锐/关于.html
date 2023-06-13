@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>关于</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .about {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .about_bgc {
+      width: 100%
+    }
+
+    .about_tit {
+      position: absolute;
+      top: 280px;
+      left: 0;
+      right: 0;
+      font-size: 28px;
+      font-weight: 550;
+      bottom: 0;
+      width: 800px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .ribbon {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      right: 300px;
+      top: 50px;
+      margin: auto;
+    }
+
+    .ribbon:after,
+    .ribbon:before {
+      margin-top: 0.5em;
+      content: "";
+      display: flex;
+    ;
+      border: 1.5em solid #fff;
+    }
+
+    .ribbon:after {
+      border-right-color: transparent;
+    }
+
+    .ribbon:before {
+      border-left-color: transparent;
+    }
+
+    .ribbon a:link,
+    .ribbon a:visited {
+      color: #000;
+      text-decoration: none;
+      height: 3.5em;
+      overflow: hidden;
+    }
+
+    .ribbon span {
+      background: #fff;
+      display: inline-block;
+      line-height: 3em;
+      padding: 0 1.5em;
+      margin-top: 0.5em;
+      position: relative;
+      -webkit-transition: background-color 1s, margin-top 1s;
+      /* Saf3.2+, Chrome */
+      -moz-transition: background-color 1s, margin-top 1s;
+      /* FF4+ */
+      -ms-transition: background-color 1s, margin-top 1s;
+      /* IE10 */
+      -o-transition: background-color 1s, margin-top 1s;
+      /* Opera 10.5+ */
+      transition: background-color 1s, margin-top 1s;
+    }
+
+    .ribbon a:hover span {
+      background: #FFD204;
+      margin-top: 0;
+    }
+
+    .ribbon span:before {
+      content: "";
+      position: absolute;
+      top: 3em;
+      left: 0;
+      border-right: 0.5em solid #9B8651;
+      border-bottom: 0.5em solid #fff;
+    }
+
+    .ribbon span:after {
+      content: "";
+      position: absolute;
+      top: 3em;
+      right: 0;
+      border-left: 0.5em solid #9B8651;
+      border-bottom: 0.5em solid #fff;
+    }
+
+    .me {
+      display: flex;
+      justify-content: center;
+      margin-top: 60px;
+      overflow: hidden;
+    }
+
+    .me_tit {
+      width: 600px;
+      line-height: 36px;
+      font-size: 18px;
+      margin-left: 100px;
+      margin-top: 50px;
+    }
+
+    .me_img {
+      width: 800px;
+      height: 600px;
+    }
+
+    .animate {
+      padding-left: 20px;
+      width: 500px;
+      font-size: 16px;
+      color: #000;
+      animation: 10s wordsLoop linear infinite normal;
+    }
+
+    @keyframes wordsLoop {
+      0% {
+        transform: translateY(100px);
+        -webkit-transform: translateY(100px);
+      }
+      100% {
+        transform: translateY(-100%);
+        -webkit-transform: translateY(-100%);
+      }
+    }
+
+    .videos {
+      display: flex;
+      margin-top: 60px;
+      padding-bottom: 80px;
+    }
+
+    .videos span {
+      width: 400px;
+      margin-right: 100px;
+      margin-left: 300px;
+      color: #FFD204
+    }
+  </style>
+</head>
+<body>
+<div class="about">
+  <h3 class="about_tit">未来一片迷茫，我只好带上坚强勇敢去闯。</h3>
+  <img class="about_bgc" src="云背景.jpg" alt="云背景">
+  <div class='ribbon'>
+    <a href='./index.html'><span>Hous</span></a>
+    <a href='./about.html'><span>I</span></a>
+    <a href='./form.html'><span>Form</span></a>
+
+  </div>
+  <div class="me">
+    <img class="me_img" src="猫背.jpg" alt="猫背">
+    <span class="me_tit animate ">大家好，我叫杨锐，今年20岁。我就读于成都东软学院，主修艺术与科技。在课余时间，我喜欢打羽毛球、听音乐和看动漫。我和在座的同学们一样，渴望展翅高飞，渴望将来有更大的发展空间，有施展才华的更广阔的天地。我想，有耕耘就会有收获。未来的四年里，由各位老师的倾情传授，我们必须会有一个无限完美的未来。
+大学校园就是一个大家庭。在这个大家庭中，我们扮演着被培养对象的角色。老师是我们的长辈，所以我对他们尊敬有加。同学们就像兄弟姐妹，我们一起学习，一起娱乐，互帮互助，和睦的相处。集体生活使我懂得了要主动去体谅别人和关心别人，也使我变得更加坚强和独立。我觉得自己的事情就应该由自己负责，别人最多只能给你一些建议。遇到事情不要急躁，要冷静地思考。不轻易的承诺，承诺了就要努力去兑现。生活需要自己来勾画，不一样的方式就有不一样的人生。
+我们既然有缘相聚在一班，所以对一些同学有了一定的认识和了解，也成为了朋友，希望我们大家能继续相互鼓励，共同成长。在花季和雨季有我们最深的情谊，也很高兴能和你们成为同学，希望大家以后在学习上相互帮助。
+            </span>
+  </div>
+</div>
+</body>
