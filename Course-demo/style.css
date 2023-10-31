@@ -1,0 +1,159 @@
+/*body{*/
+/*	!*background-image: url("warning.svg");*!*/
+/*	!*设置背景颜色渐变：30deg表示30度，从#000白色到#fff黑色*!*/
+/*}*/
+/*h1,h2,h3,h4,h5,h6{*/
+/*	color: #7500BF;*/
+/*}*/
+/*!*以下是特殊状态的改变，叫做伪类*!*/
+/*a:link{*/
+/*	color: #adff2f;*/
+/*	font-size: 30px;*/
+/*	font-weight: bold;*/
+/*}*/
+/*a:visited{*/
+/*	color: #1f1f1f;*/
+/*	font-size: 16px;*/
+/*	font-weight: lighter;*/
+/*}*/
+/*a:hover{*/
+/*	color: #00ffff;*/
+/*}*/
+/*a:active{*/
+/*	color: green;*/
+/*}*/
+/*p{*/
+/*	font-size: 16px;*/
+/*}*/
+/*!*以下是对特定部分的改变，叫做伪元素*!*/
+/*p:first-letter{*/
+/*	font-size: 20px;*/
+/*	font-weight: bold;*/
+/*}*/
+/*p:first-line{*/
+/*	line-height: 50px;*/
+/*	text-indent: 2em;*/
+/*}*/
+
+/*p::first-line {*/
+/*	color: blue;*/
+/*	text-transform: uppercase;*/
+/*}*/
+/*a:before {*/
+/*	content: "♥";*/
+/*}*/
+
+/*p{*/
+/*	height: 10px;*/
+/*	overflow: hidden;*/
+/*}*/
+/*!*float：left直接加在相关的section元素，让每一个section排列*!*/
+/*section{*/
+/*	background-image: linear-gradient(30deg, #4cadff, #fc7676);*/
+/*	!*justify-content: start;*!*/
+/*	float: left;*/
+/*	width: 300px;*/
+/*	margin: 20px;*/
+/*}*/
+/*!*display:flex可以让元素排成列，需要加在父级元素*!*/
+/*.inner{*/
+/*	!*display: flex;*!*/
+/*}*/
+
+/*li{*/
+/*	float: left;*/
+/*}*/
+
+/*.box p:before {*/
+/*	content: "♥";*/
+/*}*/
+
+/*.box p:after{*/
+/*	content: url("https://interactive-examples.mdn.mozilla.net/media/warning.svg");*/
+/*}*/
+
+/*p{*/
+/*	font-size: 32px;*/
+/*	text-indent: 2em;*/
+/*}*/
+
+/*下面是float布局：left/right/none三个值*/
+.inner .box1,
+.inner .box2,
+.inner .box3{
+	float: left;
+	background: aliceblue;
+	padding: 50px;
+}
+
+/*下面是块级元素block默认值变成行内元素inline*/
+.inner2 .box1,
+.inner2 .box2,
+.inner2 .box3{
+	/*display: block;*/
+	display: inline;
+}
+
+/*flex布局，也叫弹性盒子*/
+.inner3{
+	display: flex;
+}
+
+
+/*以下是index-banner页面中的CSS*/
+body{
+	background: #f5f7f9;
+	margin: 0;
+}
+.container{
+	background-image: url("image/background.png");
+	background-size: cover;
+}
+.navigation .logo{
+	width: 140px;
+	position: absolute;
+	padding: 40px 0 0 50px;
+}
+nav{
+	display: inline;
+	margin: 50px;
+}
+nav ul{
+	list-style: none;
+	text-align: right;
+}
+nav ul li{
+	display: inline;
+	padding: 20px 50px 0 50px;
+}
+nav ul li a{
+	text-decoration: none;
+}
+button{
+	background-color: #f64aa6;
+	padding: 15px 30px;
+	border: none;
+	color: white;
+	border-radius: 50px;
+	text-transform: uppercase;
+}
+.title{
+	padding: 110px 0 300px 60px;
+}
+.title h1{
+	font-size: 80px;
+	text-transform: uppercase;
+	font-weight: bolder;
+	color: #4945cf;
+}
+.title p{
+	width: 443px;
+	margin-bottom: 50px;
+}
+.right-pic img{
+	position: absolute;
+	top: 200px;
+	right: 0;
+}
+
+

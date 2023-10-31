@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_图层_2" data-name="图层 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 86.4 25.19">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e3827b;
+      }
+
+      .cls-2 {
+        fill: #4b49b4;
+        font-family: Raleway-Bold, Raleway;
+        font-size: 20.04px;
+        font-weight: 700;
+      }
+
+      .cls-3 {
+        letter-spacing: 0em;
+      }
+    </style>
+  </defs>
+  <g id="OBJECTS">
+    <g>
+      <text class="cls-2" transform="translate(37.78 19.79)"><tspan class="cls-3" x="0" y="0">L</tspan><tspan x="11.63" y="0">ogo</tspan></text>
+      <rect class="cls-1" x="0" width="25.19" height="25.19" rx="8.92" ry="8.92"/>
+    </g>
+  </g>
+</svg>
